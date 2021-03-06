@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+     font-family: 'Montserrat', sans-serif;
+      
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-image: url("https://5000-amethyst-hookworm-b25semma.ws-eu03.gitpod.io/img/fone.jpg");
+}
+
+
+
+
+
+
+
+#about-studio {
+    color: #181A3F;
+}
+.about-studio {
+    background-color: white;
+    color: #181A3F;
+    
+}
+.about-technology {
+    background-color: #181A3F;
+    color: white;
+}
+.kin-of-3dprint {
+    background-color: white;    
+}
+
+
+
+
+.car img{   
+    height: 140px;
+    width: 250px;
+    border-radius: 5px;
+    
+   
+    
+   
+   
+  
+    
+}
+.car {
+    
+    width: 250px;
+    height: 140px;
+    border: 30px solid #181A3F;
+    border-radius: 5px;
+    color: white;
+    margin: 1px;
+    background-color:#181A3F;   
+}
+
+      
+
+
+.about-studio img {
+    width: 570px;
+    height: 270px;
+   border-radius: 5px;
+   
+   
+
+
+}
+
+.products {
+    background-color:#181A3F ;
+    color: white;
+}
+.products a {
+    color: white;
+}
+
+.price-one {
+    width: 200px;
+    border: 30px solid #1ADCEE;
+    border-radius: 5px;
+    color: white;
+    margin: 1px;
+    background-color: #1ADCEE;
+    
+
+}
+.price-two {
+    width: 200px;
+    border: 30px solid #1ADCEE;
+    border-radius: 5px;
+    color: white;
+    margin: 1px;
+    background-color: #1ADCEE;
+    
+
+}.price-three {
+    width: 200px;
+    border: 30px solid #1ADCEE;
+    border-radius: 5px;
+    color: white;
+    margin: 1px;
+    background-color: #1ADCEE;
+    
+
+}
+
+
+
+
+
+ 
