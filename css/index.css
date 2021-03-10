@@ -10,15 +10,46 @@
     padding: 0;
     
 }
+/* HEADER */
 
 header {
-    background-image: url("https://5000-amethyst-hookworm-b25semma.ws-eu03.gitpod.io/img/fone.jpg");
+    width: 100%;
+    height: 100vh;
+    background-image: url(/css/img/fone.jpg);
+    background-size: cover;
+    color: white;
+
+}
+.logo{
+    font-size: 40px;
+    margin-top: 15px;
+    
+
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    
+}    
+.menu{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+li {
+    margin: 30px 30px;
+    
 }
 
 
 
 
 
+
+/* MAIN */
 
 
 #about-studio {
@@ -83,7 +114,7 @@ header {
 .products a {
     color: white;
 }
-
+/* PRICE */
 .price-one {
     width: 200px;
     border: 30px solid #1ADCEE;
@@ -103,7 +134,8 @@ header {
     background-color: #1ADCEE;
     
 
-}.price-three {
+}
+.price-three {
     width: 200px;
     border: 30px solid #1ADCEE;
     border-radius: 5px;
