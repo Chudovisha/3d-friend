@@ -15,13 +15,16 @@
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(/img/fone.jpg);
+    background-image: url(../img/fone.jpg);
     background-size: cover;
-    color: white;
+    color: white;   
+    background-attachment: fixed;   
 }
+
 .logo{
     font-size: 40px;
     margin-top: 15px;
+    font-weight: bold;
 }
 nav {
     display: flex;
@@ -33,6 +36,29 @@ nav {
 }
 li {
     margin: 30px 30px;
+}
+.social img {
+    font-size: 10px;
+    height: 20px;
+    border: 6px solid white;
+    border-radius: 50%;
+    background-color: white;
+    margin: 4px;
+    margin-top: 30px;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 65px;
+    font-style: italic;
+    
+}
+.bot {
+   display: flex;
+   justify-content: center; 
+   font-style: italic;
+   font-size: 20px;
 }
 
 /* MAIN */
