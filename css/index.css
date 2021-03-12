@@ -204,8 +204,7 @@ header .banner {
     .text-studio p {
         display: flex;
         justify-content: left;
-        margin: 30px 374px 0px 30px;
-        text-align: justify;
+        margin: 30px 374px 0px 30px;   
     }
 }
         
