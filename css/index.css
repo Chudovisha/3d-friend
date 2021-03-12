@@ -178,7 +178,7 @@ header .banner {
     margin: 0px 30px 95px 30px;    
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1600px) {
     .about-studio {
         display: flex;
         justify-content: space-around;
@@ -251,7 +251,7 @@ header .banner {
     margin: 0px 30px 55px 30px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1600px) {
    
     .about-technology {
         display: flex;
