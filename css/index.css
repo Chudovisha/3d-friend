@@ -51,6 +51,10 @@ header .menu a {
     color: var(--accent-color); ;   
 }
 
+header .menu a:hover {
+    color: #BA1110;
+}
+
 .social img {
     font-size: 10px;
     height: 20px;
