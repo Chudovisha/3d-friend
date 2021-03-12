@@ -3,40 +3,37 @@
 :root {
      font-family: 'Montserrat', sans-serif;
      scroll-behavior: smooth;
-      
+     --main-color: #22243c;
+     --accent-color: white;   
  }
 
  * {
     margin: 0;
     padding: 0;   
 }
+
 body {
     max-width: auto;
     margin: auto;
 }
+
 /* HEADER */
+
 header {
     width: 100%;
-    
     height: 90vh;
     background-position: center;
     background-image: url(../img/fone.jpg) ;
     background-size: cover;
-    color: white;   
-    background-attachment: fixed; 
-    
+    color: var(--accent-color);   
+    background-attachment: fixed;   
 }
-
-
-
 
 nav {
     display: flex;
     flex-direction: column;
-    
-    
+    background-color: var(--main-color); 
 }
-
 
 .logo{
     font-size: 40px;
@@ -44,34 +41,28 @@ nav {
     display: flex;
     justify-content: left;
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 15px;  
 }
 
 header .menu a {
     text-decoration: none;
-    
     margin: 17px;
     font-weight: bold;
-    color: white;   
+    color: var(--accent-color); ;   
 }
-
-
-
 
 .social img {
     font-size: 10px;
     height: 20px;
-    border: 6px solid white;
+    border: 6px solid var(--accent-color); ;
     border-radius: 50%;
-    background-color: white;
-    margin: 4px;
-    
-  
+    background-color: var(--accent-color); ;
+    margin: 4px; 
 }
+
 .social {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .menu {
@@ -80,6 +71,7 @@ header .menu a {
     flex-direction: column;  
     list-style-type: none;   
 }
+
 header .banner {
     min-height: 435px;
     margin: 0px 20px 0px 20px;
@@ -87,39 +79,35 @@ header .banner {
     justify-content: center;
     text-align: center;
     align-content: center;
-    flex-direction: column;
-    
-    
+    flex-direction: column;   
 }
 
-
-
-
-.top {
-    
+.top {  
     font-size: 65px;
-    font-style: italic;
-    
+    font-style: italic; 
 }
-.bot {
-    
+
+.bot {   
    font-style: italic;
    font-size: 20px;
 }
 
 @media (min-width: 480px) {
-    .logo{
+    
+.logo{
     font-size: 40px;
     margin-top: 10px;
     font-weight: bold;
-      
+    height: 65px;       
 }
-    nav {
+    
+nav {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    
-}    
+    background-color: var(--main-color); 
+} 
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -127,9 +115,11 @@ header .banner {
     list-style-type: none;  
     flex-direction: row; 
 }
+
 .social img{
     margin-top: 20px;
 }
+
 header .banner {
     min-height: 700px;
     max-width: 100%;
@@ -138,19 +128,12 @@ header .banner {
     text-align: center;
     flex-direction: column;
 }
-
 }
 
-
-
-
-
-
-
-
-
 /* MAIN */
+
 /* about-studio */
+
 .about-studio {
     display: flex;
     justify-content: space-around;
@@ -158,34 +141,38 @@ header .banner {
 }
 
 #about-studio {
-    color: #181A3F;
+    color: var(--main-color);
 }
+
 .about-studio {
-    background-color: white;
-    color: #181A3F;
+    background-color: var(--accent-color); ;
+    color: var(--main-color);
 }
 
 .image-studio img {
-    max-width: 300px;
-    max-height: 150px;    
+    width: 275px;
+    height: 150px;  
+    border-radius: 5px;  
 }
+
 .image-studio{
     display: flex;
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 50px;
 }
+
 #about-us {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-size: 35px;
+    margin-left: 30px;
 }
+
 .about-studio p {
     display: flex;
-    align-content: center;
-    margin: 0 50px 0 50px;
-    text-align: justify;
-
+    align-content: left;
+    margin: 0px 30px 95px 30px;    
 }
 
 @media (min-width: 480px) {
@@ -197,16 +184,16 @@ header .banner {
     .text-studio {
         display: flex;
         justify-content: center;
-        
         flex-direction: column;
     }
     .image-studio img{
-        max-width: 573px;
-        max-height: 277px;
+        width: 573px;
+        height: 277px;
     }
     .image-studio {
-        margin-left: 372px;
+        margin-left: 375px;
         margin-top: 106px;
+        margin-bottom: 100px;
     }
     #about-us {
         display: flex;
@@ -221,27 +208,128 @@ header .banner {
     }
 }
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* about-technology*/
+
 .about-technology {
-    background-color: #181A3F;
+    background-color: var(--main-color);
     color: white;
 }
+
+.image-technology img {
+    width: 275px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 90px;
+}
+
+.image-technology {
+    display: flex;
+    justify-content: center;    
+}
+
+.about-technology {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+#about-technology {
+    display: flex;
+    justify-content: left;
+    font-size: 35px;
+    margin-left: 30px;  
+    margin-top: 95px; 
+}
+
+.about-technology p {
+    display: flex;
+    justify-content: left;
+    margin: 0px 30px 55px 30px;
+}
+
+@media (min-width: 480px) {
+   
+    .about-technology {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .image-technology img{
+        width: 573px;
+        height: 277px;
+    }
+
+    .image-technology {
+        margin-right: 374px;
+        margin-top: 106px;
+    }
+
+    .text-technology {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 0px 0px 355px;
+    }
+    .text-technology p {
+        margin-top: 30px;   
+    }
+    
+    #about-technology {
+        display: flex;
+        justify-content: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* kind-of-3dprint */
 #kind-of-3dprint {
     display: flex;
     justify-content: center;
@@ -273,11 +361,7 @@ header .banner {
     background-color:#181A3F;   
 }
 
-.about-studio img {
-    width: 570px;
-    height: 270px;
-   border-radius: 5px;
-}
+
 
 .products {
     background-color:#181A3F ;
