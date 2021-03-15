@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); :root {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    --main-color: #22243c;
+    --accent-color: white;
+}
 
-:root {
-     font-family: 'Montserrat', sans-serif;
-     scroll-behavior: smooth;
-     --main-color: #22243c;
-     --accent-color: white;   
- }
- * {
+* {
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
 body {
@@ -17,31 +16,34 @@ body {
     font-family: 'Montserrat', sans-serif ;
 }
 
+.navbar-brand {
+    font-size: 30px;
+}
+
 header {
     width: 100%;
     height: 90vh;
     background-position: center;
     background-image: url(../img/fone.jpg) ;
     background-size: cover;
-    color: var(--accent-color);   
-    background-attachment: fixed;   
+    color: var(--accent-color);
+    background-attachment: fixed;
 }
 
 .social img {
     font-size: 10px;
     height: 30px;
-    border: 6px solid var(--accent-color); ;
-    border-radius: 50%;
-    background-color: var(--accent-color); ;
-    margin: 5px; 
-        
+    border: 6px solid var(--accent-color);
+    ; border-radius: 50%;
+    background-color: var(--accent-color);
+    ; margin: 5px;
 }
 
 .container-fluid {
     margin-top: 10px;
     margin-bottom: 10px;
 }
- 
+
 .navbar-brand {
     margin-right: 0px;
     margin-left: 10px;
@@ -64,48 +66,45 @@ header .banner {
     justify-content: center;
     text-align: center;
     align-content: center;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
-.top {  
+.top {
     font-size: 65px;
-    font-style: italic; 
+    font-style: italic;
 }
 
-.bot {   
-   font-style: italic;
-   font-size: 20px;
+.bot {
+    font-style: italic;
+    font-size: 20px;
 }
 
 @media (min-width: 1000px) {
+    .navbar-brand {
+        margin-right: 190px;
+        margin-left: 370px;
+    }
 
-.navbar-brand {
-    margin-right: 190px;
-    margin-left: 370px;
-}
+    .navbar-nav .nav-link {
+        margin-left: 35px
+    }
 
-.navbar-nav .nav-link {
-    margin-left: 35px
-}
+    .social {
+        margin-left: 150px;
+    }
 
-.social {
-    margin-left: 150px;
-}
-
-header .banner {
-    min-height: 700px;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
+    header .banner {
+        min-height: 700px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
 /* MAIN */
-
 /* about-studio */
-
 .about-studio {
     display: flex;
     justify-content: space-around;
@@ -117,17 +116,17 @@ header .banner {
 }
 
 .about-studio {
-    background-color: var(--accent-color); ;
-    color: var(--main-color);
+    background-color: var(--accent-color);
+    ; color: var(--main-color);
 }
 
 .image-studio img {
     width: 275px;
-    height: 150px;  
-    border-radius: 5px;  
+    height: 150px;
+    border-radius: 5px;
 }
 
-.image-studio{
+.image-studio {
     display: flex;
     justify-content: center;
     margin-top: 80px;
@@ -144,7 +143,7 @@ header .banner {
 .about-studio p {
     display: flex;
     justify-content: left;
-    margin: 0px 30px 95px 30px;    
+    margin: 0px 30px 95px 30px;
 }
 
 @media (min-width: 1600px) {
@@ -152,35 +151,39 @@ header .banner {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-    } 
+    }
+
     .text-studio {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    .image-studio img{
+
+    .image-studio img {
         width: 573px;
         height: 277px;
     }
+
     .image-studio {
         margin-left: 375px;
         margin-top: 106px;
         margin-bottom: 100px;
     }
+
     #about-us {
         display: flex;
         justify-content: left;
         margin-left: 30px;
     }
+
     .text-studio p {
         display: flex;
         justify-content: left;
-        margin: 30px 374px 0px 30px;   
+        margin: 30px 374px 0px 30px;
     }
 }
-        
-/* about-technology*/
 
+/* about-technology*/
 .about-technology {
     background-color: var(--main-color);
     color: white;
@@ -195,22 +198,21 @@ header .banner {
 
 .image-technology {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .about-technology {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    
 }
 
 #about-technology {
     display: flex;
     justify-content: left;
     font-size: 35px;
-    margin-left: 30px;  
-    margin-top: 95px; 
+    margin-left: 30px;
+    margin-top: 95px;
 }
 
 .about-technology p {
@@ -220,14 +222,13 @@ header .banner {
 }
 
 @media (min-width: 1600px) {
-   
     .about-technology {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
     }
 
-    .image-technology img{
+    .image-technology img {
         width: 573px;
         height: 277px;
     }
@@ -243,10 +244,11 @@ header .banner {
         flex-direction: column;
         margin: 0px 0px 0px 355px;
     }
+
     .text-technology p {
-        margin-top: 30px;   
+        margin-top: 30px;
     }
-    
+
     #about-technology {
         display: flex;
         justify-content: left;
@@ -254,42 +256,45 @@ header .banner {
 }
 
 /* .kind-of-3dprint */
-
 #kind-of-3dprint {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     margin-top: 150px;
     margin-bottom: 65px;
 }
+
 .kind-of-3dprint {
-    background-color: white;    
-    margin-bottom: 150px;   
+    background-color: white;
+    margin-bottom: 150px;
 }
+
 .kind {
-    display: grid;  
+    display: grid;
     grid-template-columns: 300px;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .normal img {
     width: 270px;
     height: 175px;
-    border-radius: 5px;  
-    margin-top: 30px; 
+    border-radius: 5px;
+    margin-top: 30px;
 }
-.border img{
+
+.border img {
     width: 225px;
     height: 145px;
     border-radius: 5px;
     margin: 22px;
     margin-top: 30px;
 }
+
 .border {
     border: 30px solid #181A3F;
     border-radius: 5px;
     color: white;
     margin: 1px;
-    background-color:#181A3F;
+    background-color: #181A3F;
     width: 270px;
     height: 260px;
 }
@@ -305,6 +310,7 @@ article .normal h3 {
     justify-content: center;
     margin-top: 10px;
 }
+
 article {
     width: 270px;
     height: 260px;
@@ -312,22 +318,16 @@ article {
 
 @media (min-width: 650px) {
     .kind {
-    display: grid;  
-    grid-template-columns: 300px 300px;
-    justify-content: center;  
-}
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 1300px) {
-
     .kind {
-    display: grid;  
-    grid-template-columns: 300px 300px 300px 300px;
-    justify-content: center;  
-
-}  
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+        justify-content: center;
+    }
 }
-
-
-
-
