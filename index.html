@@ -6,42 +6,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3dfriend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
     <header>
-
-        <nav>
-            <div class="logo">3D friend</div>
-            <ul class="menu">
-                <li><a href="#about-us">Про нас</a></li>
-                <li><a href="#about-technology">Про технологію</a></li>
-                <li><a href="#kind-of-3dprint">Види 3д-друку</a></li>
-                <li><a href="#price">Ціни</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-            <div class="social">
-                <a href="https://www.instagram.com"><img
-                        src="https://img.icons8.com/material-outlined/48/000000/instagram-new--v1.png"
-                        alt="instagram"></a>
-                <a href="https://www.facebook.com"><img
-                        src="https://img.icons8.com/material-outlined/48/000000/facebook-new.png" alt="facebook" /></a>
-                <a href="https://www.youtube.com/"><img
-                        src="https://img.icons8.com/material-outlined/48/000000/youtube-play--v1.png"
-                        alt="youtube" /></a>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #22243c;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">3D friend</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#about-us">Про нас</a>
+                        <a class="nav-link" href="#about-technology">Про технологію</a>
+                        <a class="nav-link" href="#">Види 3д-друку</a>
+                        <a class="nav-link" href="#">Ціни</a>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Контакти</a>
+                        <div class="social">
+                            <a href="https://www.instagram.com"><img
+                                    src="https://img.icons8.com/material-outlined/48/000000/instagram-new--v1.png"
+                                    alt="instagram"></a>
+                            <a href="https://www.facebook.com"><img
+                                    src="https://img.icons8.com/material-outlined/48/000000/facebook-new.png"
+                                    alt="facebook" /></a>
+                            <a href="https://www.youtube.com/"><img
+                                    src="https://img.icons8.com/material-outlined/48/000000/youtube-play--v1.png"
+                                    alt="youtube" /></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
-
         <div class="banner">
             <h1 class="top">Студія 3д-друку в Україні</h1>
             <br>
             <h1 class="bot">технологія 3д-друку,сканування та моделювання</h1>
         </div>
-
     </header>
-    </div>
 
 
     <main>
@@ -71,47 +79,62 @@
                     <img src="img/aditive.jpg.jfif" alt="3d printing">
                 </div>
             </div>
-            <!--text
+
             <div class="kind-of-3dprint">
                 <h2 id="kind-of-3dprint">Види 3д-друку</h2>
                 <div class="kind">
                     <article>
-                        <div class="car">
+                        <div class="border">
                             <img src="img/car.jpg" alt="Моделі автомобілів">
                             <h3>Моделі автомобілів</h3>
                         </div>
-
                     </article>
                     <article>
-                        <img height="200" src="img/corpus.jpg" alt="Корпуси">
-                        <h3>Корпуси</h3>
+                        <div class="normal">
+                            <img src="img/corpus.jpg" alt="Корпуси">
+                            <h3>Корпуси</h3>
+                        </div>
                     </article>
-                    <article class="architech">
-                        <img height="200" src="img/architech.jpg" alt="Архітектура">
-                        <h3>Архітектура</h3>
-                    </article>
-                    <article>
-                        <img height="200" src="img/toys.jpg" alt="Іграшки">
-                        <h3>Іграшки</h3>
                     </article>
                     <article>
-                        <img height="200" src="img/golovolomka.jpg" alt="Головоломки">
+                        <div class="border">
+                            <img src="img/architech.jpg" alt="Архітектура">
+                            <h3>Архітектура</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="normal">
+                            <img src="img/toys.jpg" alt="Іграшки">
+                            <h3>Іграшки</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="normal">
+                        <img src="img/golovolomka.jpg" alt="Головоломки">
                         <h3>Головоломки</h3>
-                    </article>
-                    <article class="vase">
-                        <img height="200" src="img/vase.jpg" alt="Декоративні вази">
-                        <h3>Декоративні вази</h3>
+                        </div>
                     </article>
                     <article>
-                        <img height="200" src="img/bust.jpg" alt="Бюсти">
-                        <h3>Бюсти</h3>
+                        <div class="border">
+                            <img src="img/vase.jpg" alt="Декоративні вази">
+                            <h3>Декоративні вази</h3>
+                        </div>
                     </article>
-                    <article class="3d-print">
-                        <img height="200" src="img/3dprint.jpg" alt="3д-друк pla та abs">
-                        <h3>3д-друк pla та abs</h3>
+                    <article>
+                        <div class="normal">
+                        <img src="img/bust.jpg" alt="Бюсти">
+                        <h3>Бюсти</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="border">
+                            <img src="img/3dprint.jpg" alt="3д-друк pla та abs">
+                            <h3>3д-друк pla та abs</h3>
+                        </div>
                     </article>
                 </div>
             </div>
+            <!--text
             <div class="products">
                 <h2 id="price">Ціни на FDM друк</h2>
                 <div>
@@ -170,6 +193,10 @@
             </div>
         </form>
     </footer>
+-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
