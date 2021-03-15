@@ -11,7 +11,7 @@
 }
 
 body {
-    max-width: 1900px;
+    max-width: 1980px;
     margin: auto;
     font-family: 'Montserrat', sans-serif ;
 }
@@ -21,8 +21,7 @@ body {
 }
 
 header {
-    width: 100%;
-    min-height: 90vh;
+    min-height: 700px;
     background-position: center;
     background-image: url(../img/fone.jpg) ;
     background-size: cover;
@@ -34,9 +33,9 @@ header {
     font-size: 10px;
     height: 30px;
     border: 6px solid var(--accent-color);
-    ; border-radius: 50%;
+    border-radius: 50%;
     background-color: var(--accent-color);
-    ; margin: 5px;
+    margin: 5px;
 }
 
 .container-fluid {
@@ -79,7 +78,31 @@ header .banner {
     font-size: 20px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 15px
+    }
+
+    .social {
+        margin-left: 100px;
+    }
+
+    header .banner {
+        min-height: 700px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1550px) {
     .navbar-brand {
         margin-right: 190px;
         margin-left: 370px;
