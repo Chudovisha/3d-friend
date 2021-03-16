@@ -395,11 +395,11 @@ div.allprice {
     text-align: center;
     width: 300px;
     height: 455px;
-    border: 1px solid #1ADCEE;
+    border: 1px solid #98e4f4;
     border-radius: 5px;
     color: var(--main-color);
     margin: 1px;
-    background-color: #1ADCEE;  
+    background-color: #98e4f4;  
     margin-bottom: 50px;
 }
 .price-one img {
@@ -412,11 +412,11 @@ div.allprice {
     text-align: center;
     width: 300px;
     height: 455px;
-    border: 1px solid #1ADCEE;
+    border: 1px solid #98e4f4;
     border-radius: 5px;
     color: var(--main-color);
     margin: 1px;
-    background-color: #1ADCEE;
+    background-color: #98e4f4;
     margin-bottom: 50px;
 }
 .price-two img {
@@ -429,11 +429,11 @@ div.allprice {
     text-align: center;
     width: 300px;
     height: 455px;
-    border: 1px solid #1ADCEE;
+    border: 1px solid #98e4f4;
     border-radius: 5px;
     color: var(--main-color);
     margin: 1px;
-    background-color: #1ADCEE;
+    background-color: #98e4f4;
     margin-bottom: 100px;
 }
 .price-three img {
@@ -469,12 +469,31 @@ div.allprice {
     margin-bottom: 35px;
 }
 
+@media (min-width: 820px) {
+    div.allprice {
+    display: grid;
+    grid-template-columns: 370px 370px;
+    justify-content: center;
+    column-gap: 30px;
+}
+    .price-one {    
+    width: 370px;
+     
+} 
+    .price-two {    
+    width: 370px;  
+} 
+    .price-three {    
+    width: 370px;  
+}
+}
+
 @media (min-width: 1200px) {
     div.allprice {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: 370px 370px 370px;
     justify-content: center;
-  
+    column-gap: 30px; 
 }
     .price-one {    
     width: 370px;
@@ -487,3 +506,4 @@ div.allprice {
     width: 370px;  
 }    
 }
+
