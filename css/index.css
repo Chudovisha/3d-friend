@@ -362,7 +362,7 @@ article {
 }
 
 /* PRICE */
-.container-fluid {
+.price-all {
     background-color: var(--main-color);
     color: var(--accent-color);
 }
