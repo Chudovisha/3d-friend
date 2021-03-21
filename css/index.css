@@ -16,6 +16,11 @@ body {
     font-family: 'Montserrat', sans-serif ;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;    
+}
+
 .navbar-brand {
     font-size: 30px;
 }
@@ -59,7 +64,7 @@ header {
 }
 
 header .banner {
-    min-height: 435px;
+    min-height: 700px;
     margin: 0px 20px 0px 20px;
     display: flex;
     justify-content: center;
