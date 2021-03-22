@@ -23,11 +23,35 @@ body {
 
 a.nav-link:hover {
     color: #d46474;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .nav-link {
     color: var(--accent-color);
+    position: relative;
+
+}
+
+.link-nav:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: 0.3s;
+
+    background-color: #98e4f4;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.link-nav:hover::after {
+    display: block;
+    opacity: 1;
+    transition: 0s;
 }
 
 .navbar-brand {
@@ -37,7 +61,7 @@ a.nav-link:hover {
 
 .navbar-brand:hover {
     color: #d46474;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 button.navbar-toggler.navbar-dark {
@@ -177,7 +201,7 @@ header .banner {
 .image-studio img {
     width: 275px;
     height: 150px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .image-studio {
@@ -246,7 +270,7 @@ header .banner {
 .image-technology img {
     width: 275px;
     height: 150px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 90px;
 }
 
@@ -333,31 +357,26 @@ header .banner {
 .normal img {
     width: 270px;
     height: 175px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 30px;
 }
 
 .border img {
     width: 225px;
     height: 145px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 22px;
     margin-top: 30px;
 }
 
 .border {
     border: 30px solid var(--main-color);
-    border-radius: 5px;
+    border-radius: 10px;
     color: var(--accent-color);
     margin: 1px;
     background-color: var(--main-color);
     width: 270px;
     height: 260px;
-    margin-left: 15px;
-}
-
-.normal {
-    margin-left: 15px;
 }
 
 article .border h3 {
@@ -417,7 +436,16 @@ div.allprice {
 .nav {
     justify-content: center;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+    width: 100%;  
+}
+
+
+
+.container-fluid.price-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button.btn.btn-danger:hover {
@@ -513,7 +541,7 @@ button.btn.btn-danger:hover {
 @media (min-width: 820px) {
     div.allprice {
         display: grid;
-        grid-template-columns: 370px 370px;
+        grid-template-columns: 370px;
         justify-content: center;
         column-gap: 30px;
     }
@@ -529,6 +557,9 @@ button.btn.btn-danger:hover {
     .price-three {
         width: 370px;
     }
+    .nav { 
+    width: 100%;  
+}
 }
 
 @media (min-width: 1200px) {
@@ -550,6 +581,9 @@ button.btn.btn-danger:hover {
     .price-three {
         width: 370px;
     }
+    .nav {
+    width: 1170px;  
+}
 }
 
 /* CONTACT */
@@ -671,6 +705,8 @@ textarea#exampleFormControlTextarea1 {
 
     .map iframe {
         width: 540px;
+        height: 240px;
+        border-radius: 10px;
     }
 
     .map {

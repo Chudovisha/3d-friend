@@ -24,11 +24,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#about-us">Про нас</a>
-                        <a class="nav-link" href="#about-technology">Про технологію</a>
-                        <a class="nav-link" href="#kind-of-3dprint">Види 3д-друку</a>
-                        <a class="nav-link" href="#price">Ціни</a>
-                        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Контакти</a>
+                        <a class="nav-link link-nav" aria-current="page" href="#about-us">Про нас</a>
+                        <a class="nav-link link-nav" href="#about-technology">Про технологію</a>
+                        <a class="nav-link link-nav" href="#kind-of-3dprint">Види 3д-друку</a>
+                        <a class="nav-link link-nav" href="#price">Ціни</a>
+                        <a class="nav-link link-nav" href="#contact" tabindex="-1" aria-disabled="true">Контакти</a>
                         <div class="social">
                             <a href="https://www.instagram.com"><img
                                     src="https://img.icons8.com/material-outlined/48/000000/instagram-new--v1.png"
@@ -140,7 +140,7 @@
                 <div class="price">
                     <h2 id="price">Ціни на FDM друк</h2>
                 </div>
-                <nav>
+                <nav class="nav-width">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                             data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
@@ -267,7 +267,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" name="username" id="exampleFormControlInput1"
+                        <input type="text" required class="form-control" name="username" id="exampleFormControlInput1"
                             placeholder="Номер телефону">
                     </div>
                     <div class="mb-3">
